@@ -1,0 +1,1780 @@
+ <html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Diploma College Info</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     1. SPLASH SCREEN
+========================= -->
+
+<section id="splash" class="screen splash">
+
+    <div class="splash-content">
+
+        <img src="images/logo.png"
+             class="logo"
+             alt="Diploma College Logo">
+
+        <h1>DIPLOMA</h1>
+
+        <h2>COLLEGE INFO</h2>
+
+        <div class="line"></div>
+
+        <p>All Information</p>
+
+        <p>At Your Fingertips</p>
+
+        <img src="images/college.jpg"
+             class="splash-college"
+             alt="College">
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     2. HOME SCREEN
+========================= -->
+
+<section id="home"
+         class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="toggleMenu()">☰</button>
+
+        <h2>Diploma College Info</h2>
+
+        <button>♧</button>
+
+    </header>
+
+
+    <div class="home-image">
+
+        <img src="images/college.jpg"
+             alt="College">
+
+        <div class="welcome">
+
+            <span>Welcome to</span>
+
+            <strong>Diploma College</strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="home-content">
+
+        <h3>Explore</h3>
+
+
+        <div class="home-card"
+             onclick="showScreen('branches')">
+
+            <span class="icon">🏫</span>
+
+            <div>
+                <strong>Branches</strong>
+                <small>View all branches</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+
+        <div class="home-card"
+             onclick="showScreen('semesters')">
+
+            <span class="icon">🎓</span>
+
+            <div>
+                <strong>Semesters</strong>
+                <small>View semesters</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+
+        <div class="home-card"
+             onclick="showScreen('training')">
+
+            <span class="icon">💼</span>
+
+            <div>
+                <strong>Training & Placements</strong>
+                <small>View training details</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+
+        <div class="home-card"
+             onclick="showScreen('fees')">
+
+            <span class="icon">₹</span>
+
+            <div>
+                <strong>Fees</strong>
+                <small>View fee structure</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+
+        <div class="home-card"
+             onclick="showScreen('about')">
+
+            <span class="icon">ℹ️</span>
+
+            <div>
+                <strong>About App</strong>
+                <small>Know more about us</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bottom Navigation -->
+
+    <nav class="bottom-nav">
+
+        <button onclick="showScreen('home')">
+            🏠
+            <small>Home</small>
+        </button>
+
+        <button onclick="showScreen('branches')">
+            🏫
+            <small>Branches</small>
+        </button>
+
+        <button onclick="showScreen('semesters')">
+            🎓
+            <small>Semesters</small>
+        </button>
+
+        <button onclick="showScreen('training')">
+            💼
+            <small>Training</small>
+        </button>
+
+        <button onclick="showScreen('fees')">
+            ₹
+            <small>Fees</small>
+        </button>
+
+        <button onclick="showScreen('about')">
+            ℹ️
+            <small>About</small>
+        </button>
+
+    </nav>
+
+</section>
+
+
+<!-- =========================
+     3. BRANCHES
+========================= -->
+
+<section id="branches"
+         class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('home')">
+            ←
+        </button>
+
+        <h2>Branches</h2>
+
+        <span></span>
+
+    </head>
+      <div class="list">
+
+
+        <!-- CME -->
+
+        <div class="branch-card"
+             onclick="showScreen('semesters')">
+
+            <div class="branch-icon">🖥️</div>
+
+            <div class="branch-text">
+
+                <strong>CME</strong>
+
+                <small>
+                    Computer Maintenance Engineering
+                </small>
+
+            </div>
+
+            <span>›</span>
+
+        </div>
+      <!-- EEE -->
+
+<div class="branch-card"
+     onclick="showScreen('eeeSemesters')">
+
+    <div class="branch-icon">⚡</div>
+
+    <div class="branch-text">
+        <strong>EEE</strong>
+        <small>Electrical & Electronics Engineering</small>
+    </div>
+
+    <span>›</span>
+
+</div>
+
+
+<!-- ECE -->
+
+<div class="branch-card"
+     onclick="showScreen('eceSemesters')">
+
+    <div class="branch-icon">▣</div>
+
+    <div class="branch-text">
+        <strong>ECE</strong>
+        <small>Electronics & Communication Engineering</small>
+    </div>
+
+    <span>›</span>
+
+</div>
+
+
+<!-- MECH -->
+
+<div class="branch-card"
+     onclick="showScreen('mechSemesters')">
+
+    <div class="branch-icon">🔧</div>
+
+    <div class="branch-text">
+        <strong>MECH</strong>
+        <small>Mechanical Engineering</small>
+    </div>
+
+    <span>›</span>
+
+</div>
+
+
+        
+</section>
+
+
+<!-- =========================
+     4. CME SEMESTERS
+========================= -->
+
+<section id="semesters"
+         class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('branches')">
+            ←
+        </button>
+
+        <h2>CME - Semesters</h2>
+
+        <span></span>
+
+    </header>
+
+
+    <div class="list">
+
+        <div class="semester-card"
+             onclick="showScreen('sem1')">
+
+            <div class="number">1</div>
+
+            <div>
+                <strong>1st Semester</strong>
+                <small>View Subjects</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+
+        <div class="semester-card"
+             onclick="showScreen('sem3')">
+        <div class="number">3</div>
+
+            <div>
+                <strong>3rd Semester</strong>
+                <small>View Subjects</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+
+        <div class="semester-card"
+             onclick="showScreen('sem4')">
+
+            <div class="number">4</div>
+
+            <div>
+                <strong>4th Semester</strong>
+                <small>View Subjects</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+
+        <div class="semester-card"
+             onclick="showScreen('sem5')">
+
+            <div class="number">5</div>
+
+            <div>
+                <strong>5th Semester</strong>
+                <small>View Subjects</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+        </>
+
+    </div>
+
+</section>
+
+  
+<!-- =========================
+     5. 1ST SEMESTER
+========================= -->
+
+<section id="sem1"
+         class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('semesters')">
+            ←
+        </button>
+
+        <h2>CME - 1st Semester</h2>
+
+        <span></span>
+
+    </header>
+
+
+    <  class="list">
+
+        <h3>1st Semester Subjects</h3>
+
+        <div class="subject-card" onclick="showSubject('English')">
+    <span>CM-101</span>
+    <span>English ›</span>
+        </div>
+
+<div class="subject-card" onclick="showSubject('Maths')">
+    <span>CM-102</span>
+    <span>Maths ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('Physics')">
+    <span>CM-103</span>
+    <span>Physics ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('Chemistry')">
+    <span>CM-104</span>
+    <span>Chemistry ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('BCE')">
+    <span>CM-105</span>
+    <span>BCE ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('C Programming')">
+    <span>CM-106</span>
+    <span>C Programming ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('E.D')">
+    <span>CM-107</span>
+    <span>E.D ›</span>
+</div>
+</div>
+</section>
+
+
+<!-- =========================
+     6. 3RD SEMESTER
+========================= -->
+
+<section id="sem3"
+         class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('semesters')">
+            ←
+        </button>
+
+        <h2>CME - 3rd Semester</h2>
+
+        <span></span>
+
+    </header>
+
+
+    <div class="list">
+   <h3>3rd Semester Subjects</h3>
+
+        <div class="subject-card" onclick="showSubject('M2')">
+    <span>CM-301</span>
+    <span>Maths (M2) ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('DE')">
+    <span>CM-302</span>
+    <span>DE ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('OS')">
+    <span>CM-303</span>
+    <span>OS ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('DS')">
+    <span>CM-304</span>
+    <span>DS ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('DBMS')">
+    <span>CM-305</span>
+    <span>DBMS ›</span>
+</div>
+
+</section>
+
+
+<!-- =========================
+     7. 4TH SEMESTER
+========================= -->
+
+<section id="sem4"
+         class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('semesters')">
+            ←
+        </button>
+
+        <h2>CME - 4th Semester</h2>
+
+        <span></span>
+
+    </header>
+
+
+    <div class="list">
+
+        <h3>4th Semester Subjects</h3>
+
+        <div class="subject-card" onclick="showSubject('SE')">
+    <span>CM-401</span>
+    <span>SE ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('WT')">
+    <span>CM-402</span>
+    <span>WT ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('CO&MP')">
+    <span>CM-403</span>
+    <span>CO&MP ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('JAVA')">
+    <span>CM-404</span>
+    <span>JAVA ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('CNCS')">
+    <span>CM-405</span>
+    <span>CNCS ›</span>
+</div>
+
+</section>
+
+
+<!-- =========================
+     8. 5TH SEMESTER
+========================= -->
+
+<section id="sem5"
+         class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('semesters')">
+            ←
+        </button>
+
+        <h2>CME - 5th Semester</h2>
+
+        <span></span>
+
+    </header>
+
+
+    < class="list">
+
+        <h3>5th Semester Subjects</h3>
+
+        
+    <div class="subject-card" onclick="showSubject('IME')">
+    <span>CM-501</span>
+    <span>IME ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('BD&CC')">
+    <span>CM-502</span>
+    <span>BD&CC ›</span>
+</div>
+      <div class="subject-card" onclick="showSubject('AP')">
+    <span>CM-503</span>
+    <span>AP ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('IoT')">
+    <span>CM-504</span>
+    <span>IoT ›</span>
+</div>
+
+<div class="subject-card" onclick="showSubject('PYTHON')">
+    <span>CM-505</span>
+    <span>PYTHON ›</span>
+</div>
+
+</section>
+  <!-- =========================
+     SUBJECT DETAILS
+========================= -->
+  <section id="subjectDetails" class="screen">
+
+    <header class="header">
+
+        <button onclick="showScreen(currentSemester)">
+            ←
+        </button>
+
+        <h2>Subject Details</h2>
+
+        <span></span>
+
+    </header>
+
+    <div class="subject-details">
+
+        <div class="subject-title">
+
+            <div class="number" id="detailNumber">
+                1
+            </div>
+
+            <div>
+                <h2 id="detailSubject">
+                    Subject Name
+                </h2>
+
+                <small id="detailInfo">
+                    Branch: CME | Semester: 1st
+                </small>
+            </div>
+
+        </div>
+
+        <h3>About Subject</h3>
+
+        <p id="detailAbout">
+            Subject information will appear here.
+        </p>
+
+        <h3>Topics</h3>
+
+        <ul id="detailTopics">
+        </ul>
+
+    </div>
+
+</section>
+  <script src="script.js"></script>
+      
+<!-- =========================
+     9. TRAINING
+========================= -->
+
+<section id="training"
+         class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('home')">
+            ←
+        </button>
+
+        <h2>Training & Placements</h2>
+
+        <span></span>
+
+    </header>
+
+
+    <div class="list">
+
+        <h3>Our Training</h3>
+
+        <div class="training-card">
+            <strong>Aptitude Training</strong>
+            <small>Improve Aptitude Skills</small>
+        </div>
+
+        <div class="training-card">
+            <strong>Technical Training</strong>
+            <small>Domain Specific Training</small>
+        </div>
+
+        <div class="training-card">
+            <strong>Soft Skills Training</strong>
+            <small>Communication & Interview</small>
+        </div>
+
+        <div class="training-card">
+            <strong>Mock Interviews</strong>
+            <small>Interview Preparation</small>
+        </div>
+
+
+        <h3>Placement Support</h3>
+
+        <div class="training-card">
+            <strong>Company Drives</strong>
+            <small>On Campus Drives</small>
+        </div>
+
+        <div class="training-card">
+            <strong>Placement Guidance</strong>
+            <small>Resume & Interview Tips</small>
+        </div>
+
+        <div class="training-card">
+            <strong>Industry Interaction</strong>
+            <small>Workshops & Seminars</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     10. FEES
+========================= -->
+
+<section id="fees"
+         class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('home')">
+            ←
+        </button>
+
+        <h2>Fees Details</h2>
+
+        <span></span>
+
+    </header>
+
+
+    <div class="list">
+
+        <div class="fee-select">
+
+            <span>Branch</span>
+
+            <strong>CME ▼</strong>
+
+        </div>
+
+
+        <div class="total-fee">
+
+            <small>Total Fee</small>
+          <strong>₹ 30,000</strong>
+
+            <span>Per Year</span>
+
+        </div>
+
+
+        <h3>Fee Components</h3>
+
+
+        <div class="fee-row">
+            <span>Tuition Fee</span>
+            <strong>₹ 25,000</strong>
+        </div>
+
+        <div class="fee-row">
+            <span>Admission Fee</span>
+            <strong>₹ 1,000</strong>
+        </div>
+      
+        <div class="fee-row">
+            <span>Other Fee</span>
+            <strong>₹ 4,000</strong>
+        </div>
+
+
+        <button class="download-button">
+            ↓ Download Fee Structure
+        </button>
+
+    </div>
+
+</section>
+  <!-- =========================
+     FEE DETAILS
+========================= -->
+
+<section id="feeDetails"
+         class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('fees')">
+            ←
+        </button>
+
+        <h2>Fee Details</h2>
+
+        <span></span>
+
+    </header>
+
+
+    <div class="list">
+
+        <div class="fee-select">
+
+            <span>Branch</span>
+
+            <strong>CME ▼</strong>
+
+        </div>
+      <div class="fee-select">
+
+            <span>Branch</span>
+
+            <strong>ECE ▼</strong>
+
+    </div>
+  <div class="fee-select">
+
+            <span>Branch</span>
+
+            <strong>EEE ▼</strong>
+
+</div>
+  <div class="fee-select">
+
+            <span>Branch</span>
+
+            <strong>MECH ▼</strong>
+
+</div>
+
+
+        <h3>Payment Structure</h3>
+
+
+        <div class="fee-row">
+
+            <span>At Admission</span>
+
+            <strong>₹ 25,000</strong>
+
+        </div>
+
+
+        <div class="fee-row">
+
+            <span>1st Installment</span>
+
+            <strong>₹ 20,000</strong>
+
+        </div>
+
+
+        <div class="fee-row">
+
+            <span>2nd Installment</span>
+
+            <strong>₹ 20,000</strong>
+
+        </div>
+
+
+        <h3>Note</h3>
+
+        <p class="fee-note">
+
+            Fees once paid will not be refundable
+            under any circumstances.
+
+        </p>
+
+
+        <button class="download-button">
+
+            ↓ Download Fee Structure
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     11. ABOUT APP
+========================= -->
+
+<section id="about"
+         class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('home')">
+            ←
+        </button>
+
+        <h2>About App</h2>
+       <span></span>
+
+    </header>
+
+
+    <div class="about-content">
+
+        <img src="images/logo.png"
+             class="about-logo"
+             alt="Logo">
+
+        <h2>Diploma College Info</h2>
+
+        <p>Version 1.0</p>
+
+        <p>
+            This website provides information
+            for diploma students about branches,
+            semsters,fees details,Training&Placements,
+            
+        </p>
+
+
+        <h3>Features</h3>
+
+        <p>🏫 Branches Information</p>
+
+        <p>📚 Semesters & Subjects</p>
+
+        <p>💼 Training & Placement</p>
+
+        <p>💰 Fee Structure</p>
+
+
+        <br>
+
+        <p>© 2024 Diploma College Info</p>
+
+        <p>All Rights Reserved</p>
+
+    </div>
+
+</section>
+
+
+
+  <!-- =========================
+     ECE SEMESTERS
+========================= -->
+
+<section id="eceSemesters" class="screen hidden">
+
+    <header class="header">
+        <button onclick="showScreen('branches')">←</button>
+        <h2>ECE - Semesters</h2>
+        <span></span>
+    </header>
+
+    <div class="list">
+
+        <div class="semester-card"
+             onclick="showScreen('eceSem1')">
+            <div class="number">1</div>
+            <div>
+                <strong>1st Semester</strong>
+                <small>View Subjects</small>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="semester-card"
+             onclick="showScreen('eceSem3')">
+            <div class="number">3</div>
+            <div>
+                <strong>3rd Semester</strong>
+                <small>View Subjects</small>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="semester-card"
+             onclick="showScreen('eceSem4')">
+            <div class="number">4</div>
+            <div>
+                <strong>4th Semester</strong>
+                <small>View Subjects</small>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="semester-card"
+             onclick="showScreen('eceSem5')">
+            <div class="number">5</div>
+            <div>
+                <strong>5th Semester</strong>
+                <small>View Subjects</small>
+            </div>
+            <span>›</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================
+     ECE 1ST SEMESTER
+========================= -->
+
+<section id="eceSem1" class="screen hidden">
+
+    <header class="header">
+        <button onclick="showScreen('eceSemesters')">←</button>
+        <h2>ECE - 1st Semester</h2>
+        <span></span>
+    </header>
+
+    <div class="list">
+
+        <div class="subject-card">
+          span>EC-101</span>
+            <span>English ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-102</span>
+            <span>Engineering Mathematics - I ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-103</span>
+            <span>Engineering Physics ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-104</span>
+            <span>Engineering Chemistry &amp; Environmental Studies ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-105</span>
+            <span>Electronic Components and Devices ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-106</span>
+            <span>Basic Electrical &amp; Digital Electronics ›</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================
+     ECE 3RD SEMESTER
+========================= -->
+
+<section id="eceSem3" class="screen hidden">
+
+    <header class="header">
+        <button onclick="showScreen('eceSemesters')">←</button>
+        <h2>ECE - 3rd Semester</h2>
+        <span></span>
+    </header>
+
+    <div class="list">
+
+        <div class="subject-card">
+            <span>EC-301</span>
+            <span>Engineering Mathematics - II ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-302</span>
+            <span>Electronic Circuits - I ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-303</span>
+            <span>Network Analysis ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-304</span>
+            <span>Digital Electronics &amp; Logic Design ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-305</span>
+            <span>Electronic Measurements &amp; Instrumentation ›</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================
+     ECE 4TH SEMESTER
+========================= -->
+
+<section id="eceSem4" class="screen hidden">
+
+    <header class="header">
+        <button onclick="showScreen('eceSemesters')">←</button>
+        <h2>ECE - 4th Semester</h2>
+        <span></span>
+        </header>
+
+    <div class="list">
+
+        <div class="subject-card">
+            <span>EC-401</span>
+            <span>Linear Integrated Circuits ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-402</span>
+            <span>Electronic Circuits - II ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-403</span>
+            <span>Communication Systems - I ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-404</span>
+            <span>Microcontrollers &amp; Applications ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-405</span>
+            <span>Industrial Electronics &amp; Control Systems ›</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================
+     ECE 5TH SEMESTER
+========================= -->
+
+<section id="eceSem5" class="screen hidden">
+
+    <header class="header">
+        <button onclick="showScreen('eceSemesters')">←</button>
+        <h2>ECE - 5th Semester</h2>
+        <span></span>
+    </header>
+
+    <div class="list">
+
+        <div class="subject-card">
+            <span>EC-501</span>
+            <span>Communication Systems - II ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-502</span>
+            <span>Embedded Systems &amp; IoT ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-503</span>
+            <span>Cellular &amp; Mobile Communications ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-504</span>
+            <span>Advanced Communication Systems / VLSI Design ›</span>
+        </div>
+
+        <div class="subject-card">
+            <span>EC-505</span>
+            <span>Industrial Management &amp; Entrepreneurship ›</span>
+        </div>
+
+    </div>
+</section>
+  <!-- EEE SEMESTERS -->
+
+<section id="eeeSemesters" class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('branches')">
+            ←
+        </button>
+
+        <h2>EEE - Semesters</h2>
+
+        <span></span>
+       </header>
+
+    <div class="list">
+
+        <div class="semester-card"
+             onclick="showScreen('eeeSem1')">
+
+            <div class="number">1</div>
+
+            <div>
+                <strong>1st Semester</strong>
+                <small>View Subjects</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+
+        <div class="semester-card"
+             onclick="showScreen('eeeSem3')">
+
+            <div class="number">3</div>
+
+            <div>
+                <strong>3rd Semester</strong>
+                <small>View Subjects</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+
+        <div class="semester-card"
+             onclick="showScreen('eeeSem4')">
+
+            <div class="number">4</div>
+
+            <div>
+                <strong>4th Semester</strong>
+                <small>View Subjects</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+
+        <div class="semester-card"
+             onclick="showScreen('eeeSem5')">
+
+            <div class="number">5</div>
+
+            <div>
+                <strong>5th Semester</strong>
+                <small>View Subjects</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EEE 1ST SEMESTER -->
+
+<section id="eeeSem1" class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('eeeSemesters')">
+            ←
+        </button>
+
+        <h2>EEE - 1st Semester</h2>
+
+        <span></span>
+
+    </header>
+
+    <div class="list">
+
+        <div class="subject-card">
+            <strong>EE-101: English</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-102: Engineering Mathematics - I</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-103: Engineering Physics</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-104: Engineering Chemistry and Environmental Studies</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-105: Electrical Engineering Materials</strong>
+        </div>
+
+        <div class="subject-card">
+[10/5, 1:57 PM] Decent     Boy      Jagan: strong>EE-106: Basic Electrical Engineering</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EEE 3RD SEMESTER -->
+
+<section id="eeeSem3" class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('eeeSemesters')">
+            ←
+        </button>
+
+        <h2>EEE - 3rd Semester</h2>
+
+        <span></span>
+
+    </header>
+
+    <div class="list">
+
+        <div class="subject-card">
+            <strong>EE-301: Engineering Mathematics - II</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-302: D.C. Machines & Transformers</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-303: Electrical Circuit Theory</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-304: Electronics Engineering - I</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-305: Electrical & Electronic Measuring Instruments</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EEE 4TH SEMESTER -->
+
+<section id="eeeSem4" class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('eeeSemesters')">
+            ←
+        </button>
+
+        <h2>EEE - 4th Semester</h2>
+
+        <span></span>
+
+    </header>
+
+    <div class="list">
+
+        <div class="subject-card">
+            <strong>EE-401: A.C. Machines - I</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-402: Power System - I (Generation & Transmission)</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-403: Electronics Engineering - II</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-404: Utilization of Electrical Energy</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-405: Electrical Estimation & Costing</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EEE 5TH SEMESTER -->
+
+<section id="eeeSem5" class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('eeeSemesters')">
+            ←
+        </button>
+
+        <h2>EEE - 5th Semester</h2>
+        <span></span>
+
+    </header>
+
+    <div class="list">
+
+        <div class="subject-card">
+            <strong>EE-501: Industrial Management & Smart Technologies / Entrepreneurship</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-502: A.C. Machines - II</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-503: Power System - II (Protection & Grid Integration)</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-504: Electric Vehicle Technology</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>EE-505: Industrial Electronics & PLCs / Power Electronics</strong>
+        </div>
+
+    </div>
+
+</section>
+  <!-- MECH SEMESTERS -->
+
+<section id="mechSemesters" class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('branches')">
+            ←
+        </button>
+
+        <h2>MECH - Semesters</h2>
+
+        <span></span>
+
+    </header>
+
+    <div class="list">
+
+        <div class="semester-card"
+             onclick="showScreen('mechSem1')">
+
+            <div class="number">1</div>
+
+            <div>
+                <strong>1st Semester</strong>
+                <small>View Subjects</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+
+        <div class="semester-card"
+             onclick="showScreen('mechSem3')">
+
+            <div class="number">3</div>
+
+            <div>
+                <strong>3rd Semester</strong>
+                <small>View Subjects</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+
+        <div class="semester-card"
+             onclick="showScreen('mechSem4')">
+
+            <div class="number">4</div>
+
+            <div>
+                <strong>4th Semester</strong>
+                <small>View Subjects</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+
+        <div class="semester-card"
+             onclick="showScreen('mechSem5')">
+
+            <div class="number">5</div>
+
+            <div>
+                <strong>5th Semester</strong>
+               <small>View Subjects</small>
+            </div>
+
+            <span>›</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MECH 1ST SEMESTER -->
+
+<section id="mechSem1" class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('mechSemesters')">
+            ←
+        </button>
+
+        <h2>MECH - 1st Semester</h2>
+
+        <span></span>
+
+    </header>
+
+    <div class="list">
+
+        <div class="subject-card">
+            <strong>M-101: English</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-102: Engineering Mathematics - I</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-103: Engineering Physics</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-104: Engineering Chemistry & Environmental Studies</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-105: Engineering Mechanics</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-106: Workshop Technology</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MECH 3RD SEMESTER -->
+
+<section id="mechSem3" class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('mechSemesters')">
+            ←
+        </button>
+
+        <h2>MECH - 3rd Semester</h2>
+
+        <span></span>
+
+    </header>
+
+    <div class="list">
+
+        <div class="subject-card">
+            <strong>M-301: Engineering Mathematics - II</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-302: Engineering Materials</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-303: Basic Mechanical Engineering</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-304: Strength of Materials</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-305: Manufacturing Technology - I</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MECH 4TH SEMESTER -->
+
+<section id="mechSem4" class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('mechSemesters')">
+            ←
+        </button>
+
+        <h2>MECH - 4th Semester</h2>
+
+        <span></span>
+
+    </header>
+
+    <div class="list">
+
+        <div class="subject-card">
+            <strong>M-401: Hydraulics & Fluid Mechanics</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-402: Thermal Engineering - I</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-403: Manufacturing Technology - II</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-404: Design of Machine Elements</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-405: Industrial Engineering & Estimating & Costing</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MECH 5TH SEMESTER -->
+
+<section id="mechSem5" class="screen hidden">
+
+    <header class="header">
+
+        <button onclick="showScreen('mechSemesters')">
+ ←
+        </button>
+
+        <h2>MECH - 5th Semester</h2>
+
+        <span></span>
+
+    </header>
+
+    <div class="list">
+
+        <div class="subject-card">
+            <strong>M-501: Industrial Management & Smart Technologies</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-502: Thermal Engineering - II</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-503: Refrigeration & Air Conditioning</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-504: CAD/CAM & Robotics</strong>
+        </div>
+
+        <div class="subject-card">
+            <strong>M-505: Power Plant Engineering / Renewable Energy Sources (Elective)</strong>
+        </div>
+
+    </div>
+
+</section>
+  <!-- SIDE MENU -->
+
+<div id="sideMenu"
+     style="
+     position:fixed;
+     top:0;
+     left:-300px;
+     width:280px;
+     height:100vh;
+     background:white;
+     z-index:99999;
+     box-shadow:3px 0 12px rgba(0,0,0,0.3);
+     transition:left 0.3s ease;
+     ">
+
+    <div style="
+         background:#078b36;
+         color:white;
+         padding:20px;
+         display:flex;
+         justify-content:space-between;
+         align-items:center;
+         ">
+
+        <strong>Menu</strong>
+
+        <button onclick="toggleMenu()"
+                style="
+                background:none;
+                border:none;
+                color:white;
+                font-size:22px;
+                ">
+            ✕
+        </button>
+
+    </div>
+
+    <div style="
+         padding:20px;
+         border-bottom:1px solid #ddd;
+         font-size:17px;
+         ">
+
+        📊
+
+        <a href="https://sbtet.ap.gov.in/APSBTET/"
+           style="
+           color:#222;
+           text-decoration:none;
+           margin-left:10px;
+           ">
+            APSBTET Results
+        </a>
+
+    </div>
+
+    <div style="
+         padding:20px;
+         border-bottom:1px solid #ddd;
+         font-size:17px;
+         ">
+
+        🔔
+
+        <a href="https://sbtet.ap.gov.in/APSBTET/"
+           style="
+           color:#222;
+           text-decoration:none;
+           margin-left:10px;
+           ">
+            Results Notifications
+        </a>
+
+    </div>
+
+</div>
+
+  </>
+
+  <script src="script.js"></script>
+
+</body>
+      </html>
